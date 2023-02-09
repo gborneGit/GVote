@@ -1,0 +1,13 @@
+name: GVote
+main: fr.aang.gvote.Main
+version: 1.0
+author: [Aang]
+api-version: 1.19
+depend: [ Multiverse-Core ]
+permissions:
+  gvote.use:
+    description: Permet d'obtenir une clef sans vote
+    default: op
+commands:
+  vote:
+    description: Gere les commandes du plugin GVote

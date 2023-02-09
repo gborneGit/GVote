@@ -1,0 +1,32 @@
+
+# {player} remplacer par le nom du joueur
+# {ip} remplacer par l'ip du joueur
+# {server} remplacer par "server_id"
+# duration: mettre le temps d'attente entre les votes en minutes
+
+#'1':
+#    name: 'serveur-prive.net'
+#    delay: 180
+#    server_id: 13583
+#    url_vote: 'https://serveur-prive.net/minecraft/ecocraft-survie-1-19-2-{server}/vote'
+#    url_check: 'https://serveur-prive.net/api/vote/json/{server}/{ip}'
+
+list:
+  '0':
+    name: 'liste-serveurs-minecraft.org'
+    delay: 180
+    server_id: 3236
+    url_vote: 'https://serveur-minecraft.com/{server}'
+    url_check: 'https://serveur-minecraft.com/api/1/vote/{server}/{ip}'
+  '1':
+    name: 'serveurs-minecraft.org'
+    delay: 1440
+    server_id: 63152
+    url_vote: 'https://www.serveurs-minecraft.org/vote.php?id={server}'
+    url_check: 'https://www.serveurs-minecraft.org/api/is_valid_vote.php?id={server}&ip={ip}&duration=5'
+  '2':
+    name: 'serveur-minecraft.com'
+    delay: 180
+    server_id: 205639
+    url_vote: 'https://www.liste-serveurs-minecraft.org/vote/?idc={server}&nickname={player}'
+    url_check: 'https://api.liste-serveurs-minecraft.org/vote/vote_verification.php?server_id={server}&ip={ip}'
